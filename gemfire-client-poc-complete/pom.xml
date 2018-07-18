@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>bx.poc.cross-domain.gral_gemfire.client</groupId>
+    <artifactId>gemfire-client-poc</artifactId>
+    <version>1.0.0.RELEASE</version>
+  </parent>
+
+  <artifactId>gemfire-client-poc-complete</artifactId>
+  <packaging>jar</packaging>
+
+  <name>Apache Gemfire with Spring Data POC Complete</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-logging</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-jetty</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-geode</artifactId>
+    </dependency>
+<!--
+		<dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>geode-spring-boot-starter</artifactId>
+		  <version>1.0.0.BUILD-SNAPSHOT</version>
+		</dependency>
+-->
+    <dependency>
+      <groupId>org.springframework.shell</groupId>
+      <artifactId>spring-shell</artifactId>
+      <version>${spring-shell.version}</version>
+      <optional>true</optional>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+
+</project>

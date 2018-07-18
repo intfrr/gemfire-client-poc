@@ -11,79 +11,20 @@
     <version>2.0.2.RELEASE</version>
   </parent>
 
-  <groupId>io.springoneplatform.2017</groupId>
-  <artifactId>simplifying-apachegeode-springdata</artifactId>
+  <groupId>bx.poc.cross-domain.gral_gemfire.client</groupId>
+  <artifactId>gemfire-client-poc</artifactId>
   <version>1.0.0.RELEASE</version>
   <packaging>pom</packaging>
 
   <modules>
-    <module>simplifying-apachegeode-springdata-initial</module>
-    <module>simplifying-apachegeode-springdata-complete</module>
-    <module>simplifying-apachegeode-testing-springdata-initial</module>
-    <module>simplifying-apachegeode-testing-springdata-complete</module>
+    <module>gemfire-client-poc-initial</module>
+    <module>gemfire-client-poc-complete</module>
+    <module>gemfire-client-poc-testing-initial</module>
+    <module>gemfire-client-poc-testing-complete</module>
   </modules>
-
-  <name>Simplifying Apache Geode with Spring Data</name>
-  <description>
-    Building effective Apache Geode applications quickly and easily requires a framework that provides
-    the right level of abstraction. In this session we take Alan Kay's infamous quote "Simple things should be simple;
-    Complex things should be possible" to a whole new level with Spring Data Geode using Spring Boot. I'll show you
-    how the new Annotation-based configuration model, which builds on existing concepts like SD Repositories,
-    Spring's Cache Abstraction and Apache Geode CQ, helps you rapidly build working Apache Geode client/server
-    applications in minutes. We end the session with a quick look at the roadmap and what users can expect next.
-    You won't want to miss this.
-  </description>
-  <url>https://github.com/jxblum/simplifying-apache-geode-with-spring-data</url>
-
-  <licenses>
-    <license>
-      <name>Apache License, Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-      <comments>
-        Copyright 2017 the original author or authors.
-
-        Licensed under the Apache License, Version 2.0 (the "License");
-        you may not use this file except in compliance with the License.
-        You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-        Unless required by applicable law or agreed to in writing, software
-        distributed under the License is distributed on an "AS IS" BASIS,
-        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
-        implied.
-        See the License for the specific language governing permissions and
-        limitations under the License.
-      </comments>
-    </license>
-  </licenses>
-
-  <organization>
-    <name>Pivotal Software, Inc.</name>
-    <url>http://www.pivotal.io</url>
-  </organization>
-
-  <developers>
-    <developer>
-      <id>jblum</id>
-      <name>John Blum</name>
-      <email>jblum at pivotal dot io</email>
-      <organization>Pivotal Software, Inc.</organization>
-      <organizationUrl>http://www.spring.io</organizationUrl>
-      <roles>
-        <role>Spring Data Team</role>
-        <role>Spring Data Cassandra Project Lead (Committer)</role>
-        <role>Spring Data GemFire Project Lead (Committer)</role>
-        <role>Spring Data Geode Project Lead (Committer)</role>
-        <role>Spring Session Data GemFire Project Lead (Committer)</role>
-        <role>Spring Session Data Geode Project Lead (Committer)</role>
-        <role>Spring Boot Data GemFire Project Lead (Committer)</role>
-        <role>Spring Boot Data Geode Project Lead (Committer)</role>
-        <role>Apache Geode Committer</role>
-      </roles>
-    </developer>
-  </developers>
-
+  
+  <name>Apache Gemfire with Spring Data POC</name>
+  
   <properties>
     <java.version>1.8</java.version>
     <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>

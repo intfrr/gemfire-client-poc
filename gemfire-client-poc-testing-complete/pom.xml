@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>gemfire-client-poc</artifactId>
+		<groupId>bx.poc.cross-domain.gral_gemfire.client</groupId>
+		<version>1.0.0.RELEASE</version>
+	</parent>
+
+	<artifactId>gemfire-client-poc-testing-complete</artifactId>
+	<packaging>jar</packaging>
+
+ 	<name>Apache Gemfire with Spring Data POC Testing Complete</name>
+
+	<properties>
+		<spring-test-data-geode.version>0.0.1.BUILD-SNAPSHOT</spring-test-data-geode.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>bx.poc.cross-domain.gral_gemfire.client</groupId>
+			<artifactId>gemfire-client-poc-complete</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>bx.poc.cross-domain.gral_gemfire.client</groupId>
+			<artifactId>gemfire-client-poc-testing-initial</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-test-data-geode</artifactId>
+			<version>${spring-test-data-geode.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+</project>
