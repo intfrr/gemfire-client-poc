@@ -549,3 +549,6 @@ and [file an Issue](https://github.com/jxblum/simple-spring-geode-application/is
 
 You are also welcomed to [contribute PRs](https://github.com/jxblum/simple-spring-geode-application/pulls)
 to this example as well, if you see areas for improvement.
+=======
+# gemfire-client-poc
+gemfire-client-poc
